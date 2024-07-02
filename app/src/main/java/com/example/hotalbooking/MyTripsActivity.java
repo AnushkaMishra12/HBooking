@@ -99,6 +99,6 @@ public class MyTripsActivity extends AppCompatActivity {
         super.onPostResume();
         sliderHandler.postDelayed(sliderRunnable, 2000);
     }
-
+//Anushka@#23
 
 }
