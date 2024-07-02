@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         setContentView(R.layout.activity_main);
         drawerLayout = findViewById(R.id.DrawerLayout);
 
-        ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close
-
+        ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, drawerLayout,
+                R.string.navigation_drawer_open, R.string.navigation_drawer_close
         );
         drawerLayout.setDrawerListener(drawerToggle);
         coordinatorLayout = findViewById(R.id.fragment_container);

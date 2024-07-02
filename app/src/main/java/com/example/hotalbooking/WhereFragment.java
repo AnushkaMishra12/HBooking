@@ -2,9 +2,7 @@ package com.example.hotalbooking;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,8 +24,8 @@ public class WhereFragment extends Fragment {
         back = view.findViewById(R.id.back);
         back.setOnClickListener(v -> {
 
-            Intent i = new Intent(getActivity(), MainActivity.class);
-            getActivity().startActivity(i);
+            Intent i = new Intent(requireActivity(), MainActivity.class);
+            requireActivity().startActivity(i);
 
         });
         return view;

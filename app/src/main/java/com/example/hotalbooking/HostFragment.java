@@ -6,12 +6,14 @@ import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
 import me.relex.circleindicator.CircleIndicator;
 
 public class HostFragment extends Fragment {
 
     ViewPager mViewPager;
-    int[] images = {R.drawable.img_s, R.drawable.img_s, R.drawable.img_s, R.drawable.img_s,};
+    int[] images = {R.drawable.img_5, R.drawable.img_4, R.drawable.img_3, R.drawable.img_8,};
 
     ViewPagerAdapter adapter;
     CircleIndicator indicator;

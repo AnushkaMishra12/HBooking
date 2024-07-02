@@ -17,8 +17,6 @@ public class AddBookingDialog extends BottomSheetDialogFragment {
                 container, false);
 
         ImageView course_button = v.findViewById(R.id.idBtnDismiss);
-
-
         course_button.setOnClickListener(v1 -> {
             dismiss();
         });

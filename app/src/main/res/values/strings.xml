@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">HotelBooking</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -23,7 +24,7 @@
     <string name="add_book">Add Booking</string>
     <string name="send_otp">Send OTP</string>
     <string name="flagship_hotel_stores">Flagship Hotel Stores</string>
-    <string name="ccg_earth_experience_hotels">CGH Earth \nExperiance Hotels</string>
+    <string name="ccg_earth_experience_hotels">CGH Earth \nExperience Hotels</string>
     <string name="welcomeheritage">WelcomeHeritage</string>
     <string name="experience">"Experience the world of hosting \nwith MakeMyTrip "</string>
     <string name="got_some_extra_space_turn_it_into_income">Got some extra space? Turn it into income by\nhosting with us. We literally bring hosting to your\nfingertips. All it takes is just 15 minutes,a few taps and\nyou are ready to host!</string>
@@ -34,4 +35,24 @@
     <string name="flight_status">Flight\nStatus</string>
     <string name="pnr_status">PNR\nStatus</string>
     <string name="ease_of">Ease of Money. Peace of\nMind.</string>
+    <string name="preferred_netflix_godrej"><![CDATA[Preferred Netflix ,Godrej,Vendanta,Bajaj\n& 49,000 business.Join the big league!]]></string>
+    <string name="gst_invoice"><![CDATA[GST Invoice Assurance & Solution]]></string>
+    <string name="free_cancel">Free Cancellation on Flights</string>
+    <string name="zero_sub">Zero Subscription Cost</string>
+    <string name="login_signup">LOGIN/SIGNUP</string>
+    <string name="forget_login_id">Forget Login ID?</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="conti">CONTINUE</string>
+    <string name="or">- OR -</string>
+    <string name="by_proceeding"><![CDATA[By proceeding, you agree to <b>MakeMyTrip\'s</b> Privacy Policy, User Agreement,\nT&C\'s]]></string>
+    <string name="available_balance">Available Balance</string>
+    <string name="earn_more_wallet"><![CDATA[Earn more wallet Balance & get Discounts]]></string>
+    <string name="refer"><![CDATA[Refer & Earn]]></string>
+    <string name="add_voucher">Add Voucher</string>
+    <string name="google_business_account">Google Business Account</string>
+    <string name="location_name">Location Name</string>
+    <string name="hotel_shanti">Hotel Shanti Plaza By Haveliya Hotels</string>
+    <string name="delhi">Delhi</string>
+    <string name="discover_places">Discover Places</string>
+
 </resources>
