@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">HotelBooking</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_version">App Version</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share">Share your Birthday details with us, so we can \ncustomise our services for you</string>
+    <string name="good_afternoon">Good Afternoon,</string>
+    <string name="flights">Flights</string>
+    <string name="for_you">For You: FLAT 12% OFF*</string>
+    <string name="on_your_1st">on Your 1st Flight Booking</string>
+    <string name="use_code">Use Code</string>
+    <string name="airport_cabs">Airport Cabs</string>
+    <string name="my_trips">My Trips</string>
+    <string name="add_booking">Add Booking</string>
+    <string name="start">Start exploring for your next trip</string>
+    <string name="no_b">No bookings yet</string>
+    <string name="view_and_manage">View and manage, a booking by entering the booking ID here.For verifying the details,an OTP will be sent to th customer who has made the booking.</string>
+    <string name="booking_id">Booking ID</string>
+    <string name="enter_a_booking_id">Enter a Booking ID</string>
+    <string name="add_book">Add Booking</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="flagship_hotel_stores">Flagship Hotel Stores</string>
+    <string name="ccg_earth_experience_hotels">CGH Earth \nExperiance Hotels</string>
+    <string name="welcomeheritage">WelcomeHeritage</string>
+    <string name="experience">"Experience the world of hosting \nwith MakeMyTrip "</string>
+    <string name="got_some_extra_space_turn_it_into_income">Got some extra space? Turn it into income by\nhosting with us. We literally bring hosting to your\nfingertips. All it takes is just 15 minutes,a few taps and\nyou are ready to host!</string>
+    <string name="know_more">KNOW MORE</string>
+    <string name="mycash">MyCash</string>
+    <string name="discover">Discover more than travel</string>
+    <string name="refer_earn"><![CDATA[Refer &\n Earn]]></string>
+    <string name="flight_status">Flight\nStatus</string>
+    <string name="pnr_status">PNR\nStatus</string>
+    <string name="ease_of">Ease of Money. Peace of\nMind.</string>
+</resources>

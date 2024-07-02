@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_Trips"
+        android:icon="@drawable/trips"
+        android:title="My Trips" />
+    <item
+        android:id="@+id/nav_where"
+        android:icon="@drawable/where"
+        android:title="Where2Go" />
+    <item
+        android:id="@+id/nav_money"
+        android:icon="@drawable/money"
+        android:title="TripMoney" />
+    <item
+        android:id="@+id/nav_host"
+        android:icon="@drawable/host"
+        android:title="Be A Host" />
+</menu>

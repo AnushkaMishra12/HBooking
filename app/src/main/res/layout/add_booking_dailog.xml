@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bottom_dialog_bg"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="2dp">
+
+        <ImageView
+            android:id="@+id/idBtnDismiss"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/cancel"
+            android:layout_margin="8dp"
+            android:layout_alignParentEnd="true"
+           />
+
+
+        <TextView
+            android:id="@+id/idTVCourseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/add_book"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_margin="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idTVCourseTracks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCourseName"
+            android:layout_margin="8dp"
+            android:text="@string/view_and_manage"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/idTVCourseDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCourseTracks"
+            android:layout_margin="8dp"
+            android:text="@string/booking_id"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/booking_id"
+            style="@style/Theme.Textview"
+            android:layout_width="match_parent"
+            android:layout_below="@id/idTVCourseDuration"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="@string/enter_a_booking_id"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_bt"
+            style="@style/Theme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:backgroundTint="#AEABAB"
+            android:layout_below="@id/booking_id"
+            android:text="@string/send_otp"
+          />
+
+    </RelativeLayout>
+
+</LinearLayout>
