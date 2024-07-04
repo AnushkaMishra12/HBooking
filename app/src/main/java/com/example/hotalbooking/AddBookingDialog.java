@@ -14,7 +14,7 @@ public class AddBookingDialog extends BottomSheetDialogFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable
     ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.add_booking_dailog,
-                container, false);
+                container, true);
 
         ImageView course_button = v.findViewById(R.id.idBtnDismiss);
         course_button.setOnClickListener(v1 -> {

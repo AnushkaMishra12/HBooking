@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginStart="10dp"
     android:layout_marginTop="35dp"
-    android:background="@color/white"
     android:layout_marginEnd="10dp"
+    tools:ignore="HardcodedText"
     android:layout_marginBottom="10dp"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <LinearLayout
@@ -19,14 +21,25 @@
         android:background="@drawable/drawer_bg"
         android:orientation="horizontal"
         android:padding="15dp"
-        tools:ignore="HardcodedText">
+      >
 
-        <ImageView
+        <androidx.cardview.widget.CardView
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:background="@drawable/profile_bg"
-            android:scaleType="centerInside" />
+            android:onClick="openCamera"
+            app:cardBackgroundColor="#FFBF00"
+            app:cardCornerRadius="30dp">
+
+            <ImageView
+                android:id="@+id/image_camera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_4" />
+
+        </androidx.cardview.widget.CardView>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -77,18 +90,18 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:padding="15dp"
                 android:background="@drawable/circle_bg"
+                android:padding="15dp"
                 android:src="@drawable/account" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textSize="12sp"
-                android:textStyle="bold"
+                android:text="My Account"
                 android:textColor="@color/black"
-                android:text="My Account" />
+                android:textSize="12sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -102,18 +115,18 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:padding="15dp"
                 android:background="@drawable/circle_bg"
+                android:padding="15dp"
                 android:src="@drawable/support" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textSize="12sp"
-                android:textStyle="bold"
+                android:text="Support"
                 android:textColor="@color/black"
-                android:text="Support" />
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
@@ -129,121 +142,119 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:padding="15dp"
                 android:background="@drawable/circle_bg"
+                android:padding="15dp"
                 android:src="@drawable/notification" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textSize="12sp"
-                android:textStyle="bold"
+                android:text="Notifications"
                 android:textColor="@color/black"
-                android:text="Notifications" />
+                android:textSize="12sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:padding="5dp"
         android:background="@drawable/card_bg"
         android:orientation="vertical"
-        tools:ignore="HardcodedText">
- <TextView
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:text="My Trips"
-     android:textSize="12sp"
-     android:layout_margin="10dp"
-     android:textColor="@color/black"
-     android:textStyle="bold"
-/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginEnd="10dp"
-                android:src="@drawable/trips"
-                />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="View/Manage Trips"
-                android:textSize="12sp"
-                android:layout_gravity="center_vertical"
-                android:textColor="@color/black"
-                android:textStyle="bold"/>
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/see"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginEnd="10dp"
-                android:src="@drawable/wishlist"
-                />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Wishlist"
-                android:layout_gravity="center_vertical"
-                android:textSize="12sp"
-                android:textColor="@color/black"
-                android:textStyle="bold"/>
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/see"
-                />
-
-        </LinearLayout>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
         android:padding="5dp"
-        android:background="@drawable/card_bg"
-        android:orientation="vertical"
         tools:ignore="HardcodedText">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Setting"
-            android:textSize="12sp"
             android:layout_margin="10dp"
+            android:text="My Trips"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            />
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/trips" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="View/Manage Trips"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/see" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/wishlist" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Wishlist"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/see" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical"
+        android:padding="5dp"
+        tools:ignore="HardcodedText">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Setting"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -260,18 +271,17 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:text="Language"
-                android:textSize="12sp"
-                android:layout_gravity="center_vertical"
                 android:textColor="@color/black"
-                android:textStyle="bold"/>
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/see"
-                />
+                android:src="@drawable/see" />
 
         </LinearLayout>
 
@@ -285,24 +295,22 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/country"
-                />
+                android:src="@drawable/country" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:text="Country"
-                android:layout_gravity="center_vertical"
-                android:textSize="12sp"
                 android:textColor="@color/black"
-                android:textStyle="bold"/>
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/see"
-                />
+                android:src="@drawable/see" />
 
         </LinearLayout>
 
@@ -311,43 +319,44 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_margin="20dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/rate_us"
-            android:textSize="10sp"
-            android:textStyle="bold"
             android:fontFamily="sans-serif"
-            android:textColor="#4B8EF6"/>
+            android:text="@string/rate_us"
+            android:textColor="#4B8EF6"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:src="@drawable/point"
-            android:padding="5dp"/>
+            android:padding="5dp"
+            android:src="@drawable/point" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/privacy_policy"
-            android:textSize="10sp"
             android:fontFamily="sans-serif"
-            android:textStyle="bold"
-            android:textColor="#4B8EF6"/>
+            android:text="@string/privacy_policy"
+            android:textColor="#4B8EF6"
+            android:textSize="10sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_version"
-        android:textSize="10sp"
-        android:textAlignment="center"
         android:fontFamily="sans-serif"
-        android:textStyle="bold"
-        android:textColor="@color/black"/>
+        android:text="@string/app_version"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="bold" />
 
 
 </LinearLayout>

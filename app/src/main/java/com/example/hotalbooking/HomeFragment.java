@@ -11,12 +11,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
+
 import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
     ImageView myCash, myBiz;
-    CardView card;
-
+    CardView card,card_h,holiday;
+    RelativeLayout flight_bt;
 
     public HomeFragment() {
     }
@@ -27,6 +29,13 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         myCash = view.findViewById(R.id.myCash);
+        flight_bt = view.findViewById(R.id.flight_bt);
+        card_h = view.findViewById(R.id.card_h);
+        holiday=view.findViewById(R.id.holiday);
+        card_h.setOnClickListener(v -> {
+            Intent i = new Intent(requireActivity(), HotelBooking.class);
+            requireActivity().startActivity(i);
+        });
         myCash.setOnClickListener(v -> {
             Intent i = new Intent(requireActivity(), MyCashActivity.class);
             requireActivity().startActivity(i);
@@ -42,12 +51,14 @@ public class HomeFragment extends Fragment {
             Intent i = new Intent(requireActivity(), MyBizActivity.class);
             requireActivity().startActivity(i);
         });
-        RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
-        ArrayList<RecyclerData> list = Constant.getData();
-        RecyclerAdapter recyclerAdapter = new RecyclerAdapter(list);
-        recyclerView.setAdapter(recyclerAdapter);
-        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(4, LinearLayoutManager.VERTICAL);
-        recyclerView.setLayoutManager(staggeredGridLayoutManager);
+        flight_bt.setOnClickListener(v -> {
+            Intent i = new Intent(requireActivity(), FlightBooking.class);
+            requireActivity().startActivity(i);
+        });
+        holiday.setOnClickListener(v -> {
+            Intent i = new Intent(requireActivity(), HolidayPackages.class);
+            requireActivity().startActivity(i);
+        });
         return view;
     }
 //Anushka@#23

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -124,20 +123,170 @@
 
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/recyclerView"
+                    <LinearLayout
+                        android:id="@+id/card_3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/card"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal" />
+                        android:layout_below="@+id/card">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:id="@+id/flight_bt"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical">
+
+                                <ImageView
+                                    android:id="@+id/img_f"
+                                    android:layout_width="100dp"
+                                    android:layout_height="35dp"
+                                    android:src="@drawable/flight" />
+
+                                <TextView
+                                    android:id="@+id/text_f"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/img_f"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:text="@string/flights"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_h"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical">
+
+                                <ImageView
+                                    android:id="@+id/img_h"
+                                    android:layout_width="100dp"
+                                    android:layout_height="35dp"
+                                    android:src="@drawable/hotels" />
+
+                                <TextView
+                                    android:id="@+id/text_h"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/img_h"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:text="Hotels"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/holiday"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="3dp"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical">
+
+                                <ImageView
+                                    android:id="@+id/img_p"
+                                    android:layout_width="100dp"
+                                    android:layout_height="35dp"
+                                    android:src="@drawable/holiday" />
+
+                                <TextView
+                                    android:id="@+id/text_p"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/img_p"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:text="@string/holiday_packages"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="3dp"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical">
+
+                                <ImageView
+                                    android:id="@+id/img"
+                                    android:layout_width="100dp"
+                                    android:layout_height="35dp"
+                                    android:src="@drawable/bus" />
+
+                                <TextView
+                                    android:id="@+id/text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/img"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:text="Train\Bus"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/card2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/recyclerView"
+                        android:layout_below="@+id/card_3"
                         android:layout_margin="5dp"
                         app:cardBackgroundColor="#BEE0FB"
                         app:cardCornerRadius="20dp">
@@ -245,8 +394,8 @@
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/img_7"
-                                            android:scaleType="centerCrop" />
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/img_7" />
 
                                     </androidx.cardview.widget.CardView>
 
@@ -254,11 +403,11 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_alignParentBottom="true"
+                                        android:elevation="5dp"
                                         android:padding="10dp"
                                         android:text="@string/welcomeheritage"
                                         android:textColor="@color/white"
                                         android:textSize="15sp"
-                                        android:elevation="5dp"
                                         android:textStyle="bold" />
 
                                 </RelativeLayout>
@@ -292,8 +441,8 @@
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/img_6"
-                                            android:scaleType="centerCrop" />
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/img_6" />
 
                                     </androidx.cardview.widget.CardView>
 
@@ -301,10 +450,10 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_alignParentBottom="true"
+                                        android:elevation="5dp"
                                         android:padding="10dp"
                                         android:text="@string/ccg_earth_experience_hotels"
                                         android:textColor="@color/white"
-                                        android:elevation="5dp"
                                         android:textSize="15sp"
                                         android:textStyle="bold" />
 
@@ -325,9 +474,9 @@
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:cardCornerRadius="10dp"
+                            android:layout_margin="10dp"
                             app:cardBackgroundColor="@color/cardview_light_background"
-                            android:layout_margin="10dp">
+                            app:cardCornerRadius="10dp">
 
 
                             <LinearLayout
@@ -340,77 +489,81 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:padding="10dp"
-                                    android:orientation="vertical">
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
 
 
                                     <ImageView
                                         android:layout_width="35dp"
-                                        android:src="@drawable/people"
-                                        android:layout_height="35dp"/>
+                                        android:layout_height="35dp"
+                                        android:src="@drawable/people" />
 
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:text="@string/refer_earn"
                                         android:textAlignment="center"
                                         android:textColor="@color/black"
-                                        android:textSize="12sp"
-                                        android:text="@string/refer_earn"/>
+                                        android:textSize="12sp" />
 
                                 </LinearLayout>
+
                                 <View
                                     android:layout_width="1sp"
                                     android:layout_height="match_parent"
-                                    android:background="@color/grey"/>
+                                    android:background="@color/grey" />
+
                                 <LinearLayout
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
                                     android:layout_marginEnd="5sp"
-                                    android:padding="10dp"
-                                    android:orientation="vertical">
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
 
 
                                     <ImageView
                                         android:layout_width="35dp"
-                                        android:src="@drawable/pnr"
-                                        android:layout_height="35dp"/>
+                                        android:layout_height="35dp"
+                                        android:src="@drawable/pnr" />
 
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:text="@string/pnr_status"
                                         android:textAlignment="center"
                                         android:textColor="@color/black"
-                                        android:textSize="12sp"
-                                        android:text="@string/pnr_status"/>
+                                        android:textSize="12sp" />
 
                                 </LinearLayout>
+
                                 <View
                                     android:layout_width="1sp"
                                     android:layout_height="match_parent"
-                                    android:background="@color/grey"/>
+                                    android:background="@color/grey" />
+
                                 <LinearLayout
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:padding="10dp"
-                                    android:orientation="vertical">
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
 
 
                                     <ImageView
                                         android:layout_width="35dp"
-                                        android:src="@drawable/flight_s"
-                                        android:layout_height="35dp"/>
+                                        android:layout_height="35dp"
+                                        android:src="@drawable/flight_s" />
 
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:text="@string/flight_status"
                                         android:textAlignment="center"
                                         android:textColor="@color/black"
-                                        android:textSize="12sp"
-                                        android:text="@string/flight_status"/>
+                                        android:textSize="12sp" />
 
                                 </LinearLayout>
 

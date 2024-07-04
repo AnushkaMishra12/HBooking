@@ -1,12 +1,15 @@
 package com.example.hotalbooking;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
@@ -14,11 +17,13 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements
+        BottomNavigationView.OnNavigationItemSelectedListener {
 
     BottomNavigationView bottomNavigationView;
     CoordinatorLayout coordinatorLayout;
     DrawerLayout drawerLayout;
+    private static final int PICK_IMAGE_REQUEST = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, drawerLayout,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close
         );
+
         drawerLayout.setDrawerListener(drawerToggle);
         coordinatorLayout = findViewById(R.id.fragment_container);
         bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -70,5 +76,23 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     public void openDrawer(View view) {
         drawerLayout.openDrawer(androidx.core.view.GravityCompat.START);
+    }
+
+    public void openCamera(View view) {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_PICK);
+        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
+            Uri imageUri = data.getData();
+            ImageView imageView = findViewById(R.id.image_camera);
+            imageView.setImageURI(imageUri);
+        }
     }
 }

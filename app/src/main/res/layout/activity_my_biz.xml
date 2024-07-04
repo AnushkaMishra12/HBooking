@@ -199,12 +199,9 @@
                 android:textColor="@color/transparent"
                 android:backgroundTint="@color/white"
                 android:layout_below="@id/or"
-                android:text="@string/google_business_account"
-                />
+                android:text="@string/google_business_account" />
 
         </RelativeLayout>
-
-
 
     </androidx.cardview.widget.CardView>
     <TextView

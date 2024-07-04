@@ -54,5 +54,16 @@
     <string name="hotel_shanti">Hotel Shanti Plaza By Haveliya Hotels</string>
     <string name="delhi">Delhi</string>
     <string name="discover_places">Discover Places</string>
+    <string name="holiday_packages">Holiday \nPackages</string>
+    <string name="book_your_flights_with_our">Book Your flights with our\nAI travel expert, Gia!</string>
+    <string name="flights_s">Flights</string>
+    <string name="hotels_homestays"><![CDATA[Hotels & Homestays]]></string>
+    <string name="hourly_stays">HOURLY\nSTAYS</string>
+    <string name="book_for_3_6_or_9_hours">BOOK FOR 3, 6 OR 9 HOURS!</string>
+    <string name="flexible_slots_great_savings">Flexible slots, great savings</string>
+    <string name="daily_steals_deals"><![CDATA[Daily Steals Deals >]]></string>
+    <string name="lowest">Lowest ever prices on top-rated hotels</string>
+    <string name="holiday_pa">Holiday Packages</string>
+    <string name="india_and_international">India and International</string>
 
 </resources>
